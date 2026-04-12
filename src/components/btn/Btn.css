@@ -1,0 +1,24 @@
+.primary_btn{
+    border: none;
+    padding: 0.6rem 0.9rem;
+    font-family: inherit;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    transition: color 0.6s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+.primary_btn:hover{
+    background-color: var(--green-active);
+}
+.btn_icon{
+   font-size: 1.1rem;
+}
+.full_width{
+    width: 100%;
+}
