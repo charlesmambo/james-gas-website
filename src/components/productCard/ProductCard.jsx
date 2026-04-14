@@ -2,7 +2,8 @@ import React from 'react';
 import '../productCard/ProductCard.css';
 import Btn from '../btn/Btn';
 import { FaWhatsapp } from "react-icons/fa";
-import IMG from '../../../public/jam.png'
+import IMG from '../../../public/cylinder-5kg.png'
+import { LuMessageCircle } from "react-icons/lu";
 
 const ProductCard = () => {
   return (
@@ -17,7 +18,7 @@ const ProductCard = () => {
             </div>
             <Btn 
             text="Order Now"
-            icon={FaWhatsapp}
+            icon={LuMessageCircle}
              className="full_width"
             />
         </div>

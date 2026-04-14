@@ -12,6 +12,14 @@ import { IoTimeOutline } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import Outline from '../../components/btn/Outline';
+import { LuMessageCircle } from "react-icons/lu";
+import { FaFireAlt } from "react-icons/fa";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { MdAccessTime } from "react-icons/md";
+import { HiCursorArrowRipple } from "react-icons/hi2";
+import { FiMessageCircle } from "react-icons/fi";
+import ABTIMG from '../../../public/abt.png'
 
 
 const Home = () => {
@@ -19,9 +27,17 @@ const Home = () => {
     <div className='home_container'>
         <div className="hero_section_wrapper">
         <div className="hero_section">
-            <div className="hero_tag">Order in under 60 seconds</div>
-            <h1>Fast & Reliable Gas Delivery to Your Door</h1>
-            <p>Order LPG gas cylinders in minutes via WhatsApp. Same-day delivery available in Cape Town.</p>
+            <div className="hero_tag"><FaFireAlt /> Same-Day Delivery in Cape Town</div>
+            <h1><span className='hero_text'>Fast & Reliable Gas</span><br /> Delivery to Your Door</h1>
+            <p>Order LPG gas cylinders in minutes via WhatsApp. Same-day delivery available in Cape Town. Safe, certified, and always on time.</p>
+            <div className="hero_btn_container">
+              <Btn 
+                text="Order Now via WhatsApp"
+                icon={LuMessageCircle}
+                className='hero_solid_btn'
+                />
+                <Outline/>
+            </div>
         </div>
         </div>
 
@@ -34,21 +50,21 @@ const Home = () => {
                 </div>
             </div>
             <div className="service_card">
-                <span className='map'><FaMapMarkedAlt className='service_icon map_icon'/></span>
+                <span><HiOutlineLocationMarker className='service_icon'/></span>
                 <div className="service_card_content">
                     <h3>Citywide Coverage</h3>
                     <p>We deliver everywhere</p>
                 </div>
             </div>
             <div className="service_card">
-                <span className='s_green'><FaShieldAlt className='service_icon green_icon'/></span>
+                <span><FaShieldAlt className='service_icon'/></span>
                 <div className="service_card_content">
                     <h3>Safe & Certified</h3>
                     <p>100% quality checked</p>
                 </div>
             </div>
             <div className="service_card">
-                <span className='s_green'><FaWhatsapp className='service_icon green_icon'/></span>
+                <span><MdAccessTime className='service_icon'/></span>
                 <div className="service_card_content">
                     <h3>24/7 Ordering</h3>
                     <p>Always available</p>
@@ -84,7 +100,7 @@ const Home = () => {
                         <div className="card_num">1</div>
 
                         <div className="how_it_works_content_card_content">
-                            <div className="how_it_works_icon select_icon"><FaHandPointer /></div>
+                            <div className="how_it_works_icon select_icon"><HiCursorArrowRipple /></div>
                             <h4>Choose Your Size</h4>
                             <p>Select the cylinder size that fits your needs</p>
                         </div>
@@ -93,7 +109,7 @@ const Home = () => {
                         <div className="card_num">2</div>
 
                         <div className="how_it_works_content_card_content">
-                            <div className="how_it_works_icon whats_icon"><FaWhatsapp /></div>
+                            <div className="how_it_works_icon whats_icon"><FiMessageCircle /></div>
                             <h4>Order via WhatsApp</h4>
                             <p>Click Order Now and send us a quick message</p>
                         </div>
@@ -102,7 +118,7 @@ const Home = () => {
                         <div className="card_num">3</div>
 
                         <div className="how_it_works_content_card_content">
-                            <div className="how_it_works_icon home_icon"><FaHome /></div>
+                            <div className="how_it_works_icon select_icon"><TbTruckDelivery /></div>
                             <h4>We Deliver</h4>
                             <p>Sit back and relax. We deliver to your door</p>
                         </div>
@@ -112,7 +128,7 @@ const Home = () => {
 
             <div className="abt">
                 <div className="abt_img">
-
+                   {/* <img src={ABTIMG} alt="" /> */}
                 </div>
 
                 <div className="abt_content">
@@ -121,9 +137,10 @@ const Home = () => {
                         <h2>About Us</h2>
                     </div>
                     <div className="abt_desc">
-                        <p>At <span className='owner_tag'>Jams Gas</span>, we are committed to providing reliable, safe, and efficient gas delivery services to homes and businesses. We understand how essential gas is for everyday living from cooking meals to powering important appliances so we make it our mission to ensure you never run out when you need it most.</p>
-                        <p>Our service is built around convenience and trust. With a streamlined ordering process and fast delivery times, we bring gas cylinders directly to your doorstep, saving you time and effort. Safety is at the core of everything we do, and all our cylinders are handled and delivered following strict industry standards.</p>
-                        <p>We take pride in serving our community with professionalism, transparency, and care. Whether you're a household customer or a business, <span className='owner_tag'>Jams Gas</span> is your dependable partner for energy solutions.</p>
+                        <p>At Jams Gas, we make getting gas simple, fast, and stress-free. We deliver quality gas cylinders straight to your doorstep, so you never have to worry about running out or making a trip to refill.</p>
+                        <p>Our service is designed for convenience. With just a quick WhatsApp message, you can place your order in seconds and have it delivered to your home or business without delays.</p>
+                        <p>We take safety seriously. Every cylinder is carefully checked and handled to meet strict safety standards, giving you peace of mind every time you order.</p>
+                        <p>Whether you’re cooking at home or running a business, Jams Gas is your trusted partner for reliable, fast, and affordable gas delivery.</p>
                     </div>
                 </div>
             </div>
@@ -136,13 +153,13 @@ const Home = () => {
 
                 <div className="ctc_card_container">
                     <div className="ctc_card whats_card">
-                        <div className="ctc_icon_container ctc_whats_icon"><FaWhatsapp /></div>
+                        <div className="ctc_icon_container ctc_whats_icon"><FiMessageCircle /></div>
                         <h4 className='w_text'>Order Instantly on WhatsApp</h4>
                         <p className='w_text'>Fastest way to order. Send us a message and we'll respond within minutes.</p>
                         <div className="ctc_btn_container">
                             <Btn 
                             text="Start Chat"
-                            icon={FaWhatsapp}
+                            icon={FiMessageCircle}
                             className="ctc_btn"
                             />
                         </div>
@@ -194,48 +211,47 @@ const Home = () => {
 
                 <div className="delivery_area_content_wrapper">
                     <div className="delivery_area_map_box">
-                        <FaMapMarkedAlt />
                     </div>
                     <div className="delivery_area_content_container">
                         <h2>Service Areas</h2>
                         <div className="delivery_area_content">
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Cape Town CBD</h4>
                                 <p>Same-day delivery</p>
                              </div>
                            </div>
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Claremont</h4>
                                 <p>Same-day delivery</p>
                              </div>
                            </div>
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Bellville</h4>
                                 <p>Same-day delivery</p>
                              </div>
                            </div>
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Khayelitsha</h4>
                                 <p>Same-day delivery</p>
                              </div>
                            </div>
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Mitchells Plain</h4>
                                 <p>Same-day delivery</p>
                              </div>
                            </div>
                            <div className="delivery_area_content_card">
-                             <span> <IoLocationSharp/></span>
+                             <span> <HiOutlineLocationMarker/></span>
                              <div className="delivery_area_content_titles">
                                 <h4>Sea Point</h4>
                                 <p>Same-day delivery</p>
@@ -245,7 +261,7 @@ const Home = () => {
                         <div className="delivery_area_check">
                             <h4>Don't see your area?</h4>
                             <p>We're constantly expanding our delivery zones. Contact us to check if we deliver to your location.</p>
-                            <a href="#"><FaWhatsapp />Ask on WhatsApp</a>
+                            <a href="#"><FiMessageCircle />Ask on WhatsApp</a>
                         </div>
                     </div>
                 </div>

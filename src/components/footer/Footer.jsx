@@ -7,14 +7,18 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdLocalPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { IoTime } from "react-icons/io5";
-
+import { GrLocation } from "react-icons/gr";
+import LOGO from '../../../public/j-white.png'
 const Footer = () => {
   return (
     <footer>
+        <div className="footer_wrapper">
         <div className="footer_title">
-         <div className="logo">
-            LOGO
-          </div>
+         <div className='logo footer_logo'>
+          <a href="#">
+            <img className='logo_img footer_logo_img' src={LOGO} alt="" />
+            </a>
+         </div>
           <p>Fast, reliable, and safe LPG gas delivery directly to your home or business in Cape Town. Order in seconds via WhatsApp.</p>
           <div className="footer_icons">
             <span><FaFacebook /></span>
@@ -44,7 +48,7 @@ const Footer = () => {
             <h3>contact info</h3>
             <ul>
                 <li>
-                    <IoLocationSharp className='ft_icon'/>
+                    <GrLocation className='ft_icon'/>
                     Cape Town, South Africa
                 </li>
                 <li>
@@ -61,7 +65,10 @@ const Footer = () => {
                 </li>
             </ul>
         </div>
-
+        </div>
+       <div className="rights">
+        <p>© {new Date().getFullYear()} Jams Gas. All rights reserved.</p>
+       </div>
     </footer>
   )
 }

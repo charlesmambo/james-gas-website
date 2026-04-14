@@ -1,11 +1,13 @@
 footer{
-    background-color: var(--black-color);
+    background-color: #1D212B;
     padding: var( --section-laptop-padding);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.footer_wrapper{
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 .footer_title{
     width: 22rem;
@@ -67,4 +69,19 @@ footer{
 .ft_icon{
     color: var(--active-color);
     font-size: 1.2rem;
+}
+.rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(190, 190, 190, 0.164);
+    margin-top: 1.8rem;
+    padding-top: 1.6rem;
+    color: var(--lightgrey-color);
+}
+.footer_logo_img{
+    margin-left: -2rem;
+}
+.footer_logo{
+    margin-bottom: 1rem;
 }

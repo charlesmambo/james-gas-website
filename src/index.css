@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,21 +9,23 @@
   --section-laptop-padding: 2rem 8rem;
   --card-padding:1.4rem;
 
-  --card-radius:0.3rem;
+  --card-radius:0.8rem;
   --md-card-radius:0.9rem;
   --icon-radius:2rem;
 
 
   --black-color: #414141;
   --grey-color: #636363;
-  --active-color: #F77F00;
-  --green-color: #25D366;
-  --green-active: #18ac4e;
+  --active-color: #F97D10;
+  --active-hover-color: #d66f00;
+  --green-color: #318E58;
+  --green-active: #175732;
   --white-color: #fff;
   --lightgrey-color: #d8d8d8;
   --blue-color:#2563EB;
+  --link-color:#908F91;
 
-  --btn-radius:2rem;
+  --btn-radius:0.6rem;
 
   --xsm-text:0.8rem;
   --sm-text:0.85rem;
@@ -41,25 +43,28 @@
 
 body{
   font-family: "Miranda Sans", sans-serif;
+  background-color: #F9F7F5;
 }
 
 ul{
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3.2rem;
 }
 a{
   text-transform: capitalize;
-  color: var(--black-color);
+  color: var(--link-color);
   transition: color 0.6s ease;
+  font-weight: 400;
 }
 a:hover{
   color: var(--active-color);
 }
 h1{
-  font-size: 2.6rem;
-  color: var(--black-color);
+  font-size: 3.8rem;
+  color: var(--white-color);
+  line-height: 3.7rem;
 }
 h3,
 h2,
@@ -69,4 +74,7 @@ h4{
 p{
   color: var(--grey-color);
   font-weight: 300;
+}
+h2{
+  font-size: 1.9rem;
 }

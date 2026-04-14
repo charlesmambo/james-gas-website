@@ -1,6 +1,6 @@
 .primary_btn{
     border: none;
-    padding: 0.6rem 0.9rem;
+    padding: 12px 24px;
     font-family: inherit;
     background-color: var(--green-color);
     color: var(--white-color);
@@ -10,8 +10,9 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     justify-content: center;
+    font-weight: 500;
 }
 .primary_btn:hover{
     background-color: var(--green-active);
@@ -21,4 +22,30 @@
 }
 .full_width{
     width: 100%;
+}
+
+.outline_btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.outline_btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
 }

@@ -2,12 +2,17 @@ import React from 'react';
 import '../navbar/Navbar.css'
 import Btn from '../btn/Btn';
 import { FaWhatsapp } from "react-icons/fa";
+import { LuMessageCircle } from "react-icons/lu";
+import LOGO from '../../../public/j-logo.png'
+
 const Navbar = () => {
   return (
       <nav>
-         <span>
-            <a href="#" className='logo'>LOGO</a>
-         </span>
+         <div className='logo'>
+            <a href="#">
+                <img className='logo_img' src={LOGO} alt="" />
+            </a>
+         </div>
          <ul>
             <li>
                 <a href="#">home</a>
@@ -24,7 +29,7 @@ const Navbar = () => {
          </ul>
         <Btn 
         text="Order via WhatsApp"
-        icon={FaWhatsapp}
+        icon={LuMessageCircle}
         />
       </nav>
   )
