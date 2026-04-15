@@ -49,3 +49,12 @@
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.5);
 }
+
+@media (min-width: 1554px) {
+.primary_btn{
+    padding: 14px 24px;
+}
+.outline_btn {
+  padding: 14px 24px;
+}
+}

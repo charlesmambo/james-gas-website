@@ -75,7 +75,7 @@
         to bottom,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.6) 40%,
-        rgba(255, 255, 255, 1) 100%
+        rgba(255, 255, 255, 0.144) 100%
     );
 }
 .service_card{
@@ -582,4 +582,32 @@
 .delivery_area_check a:hover {
     color: #15803d;
     transform: translateX(3px);
+}
+
+@media (min-width: 1554px) {
+.hero_section_wrapper,
+.service {
+    padding: var(--section-desktop-padding);
+}
+.service {
+    margin-top: -4rem;
+}
+.hero_section_wrapper {
+    height: 73vh;
+}
+.service_card{
+    min-width: 22.7rem;
+}
+.abt_img{
+    min-width:38vw;
+    height: 400px;
+}
+.abt,
+.delivery_area{
+   padding-left: 4rem;
+   padding-right: 4rem;
+}
+.hero_section{
+    margin-top: 4rem;
+}
 }

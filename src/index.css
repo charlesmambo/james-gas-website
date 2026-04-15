@@ -7,6 +7,9 @@
 
   --navbar-laptop-padding: 1.5rem 8rem;
   --section-laptop-padding: 2rem 8rem;
+
+  --navbar-desktop-padding: 1.5rem 12rem;
+  --section-desktop-padding: 2rem 12rem;
   --card-padding:1.4rem;
 
   --card-radius:0.8rem;
@@ -77,4 +80,12 @@ p{
 }
 h2{
   font-size: 1.9rem;
+}
+
+@media (min-width: 1554px) {
+h1{
+  font-size: 4rem;
+  color: var(--white-color);
+  line-height: 4rem;
+}
 }

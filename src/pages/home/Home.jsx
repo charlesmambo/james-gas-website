@@ -20,7 +20,7 @@ import { MdAccessTime } from "react-icons/md";
 import { HiCursorArrowRipple } from "react-icons/hi2";
 import { FiMessageCircle } from "react-icons/fi";
 import ABTIMG from '../../../public/abt.png'
-
+import cylinder5kg from '../../../public/cylinder-5kg.png'
 
 const Home = () => {
   return (
@@ -79,14 +79,46 @@ const Home = () => {
             </div>
             
             <div className="product_card_container">
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+              <ProductCard
+                image={cylinder5kg}
+                title="3kg Cylinder"
+                price={300}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="5kg Cylinder"
+                price={500}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="8kg Cylinder"
+                price={700}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="12kg Cylinder"
+                price={1000}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="15kg Cylinder"
+                price={1200}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="20kg Cylinder"
+                price={1500}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="25kg Cylinder"
+                price={1700}
+              />
+              <ProductCard
+                image={cylinder5kg}
+                title="30kg Cylinder"
+                price={2000}
+              />
             </div>
 
             <div className="how_it_works">

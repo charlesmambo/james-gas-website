@@ -17,3 +17,8 @@ nav{
     margin-bottom: -0.8rem;
     margin-left: -1rem;
 }
+@media (min-width: 1554px) {
+  nav{
+    padding: var(--navbar-desktop-padding);
+}
+}

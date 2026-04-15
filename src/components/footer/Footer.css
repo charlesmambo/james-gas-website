@@ -85,3 +85,8 @@ footer{
 .footer_logo{
     margin-bottom: 1rem;
 }
+@media (min-width: 1554px) {
+footer{
+    padding: var(--section-desktop-padding);
+}
+}
