@@ -21,8 +21,24 @@ import { HiCursorArrowRipple } from "react-icons/hi2";
 import { FiMessageCircle } from "react-icons/fi";
 import ABTIMG from '../../../public/abt.png'
 import cylinder5kg from '../../../public/cylinder-5kg.png'
-
+import { useLocation } from "react-router-dom"
+import { useEffect } from "react"
+import { Link } from "react-router-dom";
 const Home = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    const path = location.pathname.replace("/", "")
+    
+    // default to home if empty
+    const targetId = path || "home"
+
+    const element = document.getElementById(targetId)
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [location])
   return (
     <div className='home_container'>
         <div id='home' className="hero_section_wrapper">
@@ -31,12 +47,19 @@ const Home = () => {
             <h1><span className='hero_text'>Fast & Reliable Gas</span><br /> Delivery to Your Door</h1>
             <p>Order LPG gas cylinders in minutes via WhatsApp. Same-day delivery available in Cape Town. Safe, certified, and always on time.</p>
             <div className="hero_btn_container">
+            <a
+              href="https://wa.me/+27695940761"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
               <Btn 
                 text="Order Now via WhatsApp"
                 icon={LuMessageCircle}
                 className='hero_solid_btn mobile_btn'
-                />
+                /></a>
+                <Link to="/products">
                 <Outline className="mobile_btn"/>
+                </Link>
             </div>
         </div>
         </div>
@@ -189,11 +212,17 @@ const Home = () => {
                         <h4 className='w_text'>Order Instantly on WhatsApp</h4>
                         <p className='w_text'>Fastest way to order. Send us a message and we'll respond within minutes.</p>
                         <div className="ctc_btn_container">
+                            <a
+                                href="https://wa.me/+27695940761"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
                             <Btn 
                             text="Start Chat"
                             icon={FiMessageCircle}
                             className="ctc_btn"
                             />
+                            </a>
                         </div>
                         <p className='ctc_rp_text w_text'>
                             <IoTimeOutline />
@@ -205,11 +234,13 @@ const Home = () => {
                         <h4 className='ctc_calls_text'>Call for Quick Orders</h4>
                         <p className='ctc_calls_text'>Speak directly with our team for immediate assistance and orders.</p>
                         <div className="ctc_btn_container call_btn_container">
+                            <a href="tel:+2762386152">
                             <Btn 
                             text="+276 238 6152"
                             icon={MdCall}
                             className="ctc_btn call_btn"
                             />
+                            </a>
                         </div>
                         <p className='ctc_rp_text ctc_calls_text'>
                             <IoTimeOutline />
@@ -221,11 +252,13 @@ const Home = () => {
                         <h4>Send an Email</h4>
                         <p>For general inquiries, bulk orders, or if you have any questions.</p>
                         <div className="ctc_btn_container email_btn_container">
+                            <a href="mailto:info@jamesgas.co.za">
                             <Btn 
                             text="info@jamesgas.co.za"
                             icon={MdOutlineEmail}
                             className="ctc_btn email_btn"
                             />
+                            </a>
                         </div>
                         <p className='ctc_rp_text'>
                             <IoTimeOutline />

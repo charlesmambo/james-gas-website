@@ -9,15 +9,16 @@ import { MdEmail } from "react-icons/md";
 import { IoTime } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
 import LOGO from '../../../public/j-white.png'
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
         <div className="footer_wrapper">
         <div className="footer_title">
          <div className='logo footer_logo'>
-          <a href="#">
+          <Link to="/home">
             <img className='logo_img footer_logo_img' src={LOGO} alt="" />
-            </a>
+            </Link>
          </div>
           <p>Fast, reliable, and safe LPG gas delivery directly to your home or business in Cape Town. Order in seconds via WhatsApp.</p>
           <div className="footer_icons">
@@ -31,16 +32,16 @@ const Footer = () => {
             <h3>Quick links</h3>
             <ul>
                 <li>
-                    <a href="#home">home</a>
+                    <Link to="/home">home</Link>
                 </li>
                 <li>
-                    <a href="#products">products</a>
+                    <Link to="/products">products</Link>
                 </li>
                 <li>
-                    <a href="#about">about</a>
+                   <Link to="/about">about</Link>
                 </li>
                 <li>
-                    <a href="#contact">contact</a>
+                    <Link to="/contact">contact</Link>
                 </li>
             </ul>
         </div>

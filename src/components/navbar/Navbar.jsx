@@ -33,11 +33,16 @@ const [isOpen, setIsOpen] = useState(false);
   </li>
 </ul>
          <div className="md_nav_links">
+                 <a
+        href="https://wa.me/+27695940761"
+         target="_blank"
+         rel="noopener noreferrer"
+         >
         <Btn 
         text="Order via WhatsApp"
         icon={LuMessageCircle}
         className='md_nav_links'
-        />
+        /></a>
         </div>
 <div className="mobile_toggle">
   {!isOpen ? (
@@ -73,12 +78,18 @@ const [isOpen, setIsOpen] = useState(false);
     </li>
 
     <li>
+       <a
+        href="https://wa.me/+27695940761"
+         target="_blank"
+         rel="noopener noreferrer"
+         >
       <Btn 
         text="Order via WhatsApp"
         icon={LuMessageCircle}
         className="nav_mobile_btn"
         onClick={() => setIsOpen(false)}
       />
+      </a>
     </li>
 
   </ul>
