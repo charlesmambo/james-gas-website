@@ -86,7 +86,9 @@ p{
 h2{
   font-size: 1.9rem;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @media (min-width: 1554px) {
 h1{
   font-size: 4rem;

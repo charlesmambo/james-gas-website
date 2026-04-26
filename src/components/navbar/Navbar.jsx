@@ -20,16 +20,16 @@ const [isOpen, setIsOpen] = useState(false);
          </div>
          <ul className='md_nav_links'>
             <li>
-                <a href="#">home</a>
+                <a href="#home">home</a>
             </li>
             <li>
-                <a href="#">products</a>
+                <a href="#products">products</a>
             </li>
             <li>
-                <a href="#">about</a>
+                <a href="#about">about</a>
             </li>
             <li>
-                <a href="#">contact</a>
+                <a href="#contact">contact</a>
             </li>
          </ul>
          <div className="md_nav_links">
@@ -55,17 +55,32 @@ const [isOpen, setIsOpen] = useState(false);
         
 {isOpen && (
   <ul className="mobile_navbar_links">
-    <li><a href="#">home</a></li>
-    <li><a href="#">products</a></li>
-    <li><a href="#">about</a></li>
-    <li><a href="#">contact</a></li>
+
+    <li>
+      <a href="#home" onClick={() => setIsOpen(false)}>home</a>
+    </li>
+
+    <li>
+      <a href="#products" onClick={() => setIsOpen(false)}>products</a>
+    </li>
+
+    <li>
+      <a href="#about" onClick={() => setIsOpen(false)}>about</a>
+    </li>
+
+    <li>
+      <a href="#contact" onClick={() => setIsOpen(false)}>contact</a>
+    </li>
+
     <li>
       <Btn 
         text="Order via WhatsApp"
         icon={LuMessageCircle}
         className="nav_mobile_btn"
+        onClick={() => setIsOpen(false)}
       />
     </li>
+
   </ul>
 )}
       </nav>

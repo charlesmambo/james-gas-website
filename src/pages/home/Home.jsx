@@ -25,7 +25,7 @@ import cylinder5kg from '../../../public/cylinder-5kg.png'
 const Home = () => {
   return (
     <div className='home_container'>
-        <div className="hero_section_wrapper">
+        <div id='home' className="hero_section_wrapper">
         <div className="hero_section">
             <div className="hero_tag"><FaFireAlt /> Same-Day Delivery in Cape Town</div>
             <h1><span className='hero_text'>Fast & Reliable Gas</span><br /> Delivery to Your Door</h1>
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
 
         <div className="product_container">
-            <div className="product_container_title">
+            <div id='products' className="product_container_title">
                 <h2>Order Gas</h2>
                 <p>Choose the perfect size for your home or business</p>
             </div>
@@ -158,7 +158,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="abt">
+            <div id='about' className="abt">
                 <div className="abt_img">
                    {/* <img src={ABTIMG} alt="" /> */}
                 </div>
@@ -177,7 +177,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="ctc">
+            <div id='contact' className="ctc">
                 <div className="ctc_title">
                     <h2>Get In Touch</h2>
                     <p>Choose your preferred way to contact us</p>
