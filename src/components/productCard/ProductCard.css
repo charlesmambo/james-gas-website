@@ -68,7 +68,7 @@
 
 @media (max-width: 768px){
  .product_card {
-    width: 90vw;
+    width: 100%;
     border: 2px solid rgb(226, 226, 226);
 }   
 }

@@ -27,6 +27,9 @@ nav{
 .close_icon{
     color: #e20101;
 }
+.mobile_toggle{
+    display: none;
+}
 @media (min-width: 1554px) {
   nav{
     padding: var(--navbar-desktop-padding);
@@ -44,7 +47,7 @@ nav{
   flex-direction: column;
   gap: 1.2rem;
   position: absolute;
-  top: 6rem;
+  top: 6.2rem;
   left: 50%;
   transform: translateX(-50%);
 
@@ -55,8 +58,8 @@ nav{
   padding: 1.2rem;
   border-radius: 0.3rem;
 }
-.mobile_btn{
-width:63vw !important;
+.nav_mobile_btn{
+width:76vw !important;
 }
 .mobile_navbar_links li a {
     font-size: 1.2rem;
@@ -74,5 +77,8 @@ width:63vw !important;
     height: fit-content;
     margin-bottom: -0.8rem;
     margin-left: -1rem;
+}
+.mobile_toggle{
+    display: block;
 }
 }

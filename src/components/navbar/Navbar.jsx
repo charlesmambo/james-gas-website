@@ -63,7 +63,7 @@ const [isOpen, setIsOpen] = useState(false);
       <Btn 
         text="Order via WhatsApp"
         icon={LuMessageCircle}
-        className="mobile_btn"
+        className="nav_mobile_btn"
       />
     </li>
   </ul>
