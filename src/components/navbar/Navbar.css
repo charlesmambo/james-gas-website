@@ -56,10 +56,10 @@ nav{
   width: 89vw;
   background-color: #fff;
   padding: 1.2rem;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 .nav_mobile_btn{
-width:76vw !important;
+width:77vw !important;
 }
 .mobile_navbar_links li a {
     font-size: 1.2rem;
