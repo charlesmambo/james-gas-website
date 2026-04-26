@@ -12,7 +12,7 @@ const ProductCard = ({
     const handleOrder = () => {
     const message = `Hi Jams Gas 👋%0A%0AI would like to order:%0A%0A• ${title}%0A• Price: R${price}%0A%0APlease confirm availability and delivery.`;
 
-    const whatsappUrl = `https://wa.me/2762386152?text=${message}`;
+    const whatsappUrl = `https://wa.me/+27695940761?text=${message}`;
 
     window.open(whatsappUrl, "_blank");
   };
