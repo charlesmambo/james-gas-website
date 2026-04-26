@@ -6,7 +6,7 @@ import { LuMessageCircle } from "react-icons/lu";
 import LOGO from '../../../public/j-logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);
@@ -14,24 +14,24 @@ const [isOpen, setIsOpen] = useState(false);
   return (
       <nav>
          <div className='logo'>
-            <a href="#">
+            <Link to="/home">
                 <img className='logo_img' src={LOGO} alt="" />
-            </a>
+            </Link>
          </div>
-         <ul className='md_nav_links'>
-            <li>
-                <a href="#home">home</a>
-            </li>
-            <li>
-                <a href="#products">products</a>
-            </li>
-            <li>
-                <a href="#about">about</a>
-            </li>
-            <li>
-                <a href="#contact">contact</a>
-            </li>
-         </ul>
+<ul className='md_nav_links'>
+  <li>
+    <Link to="/home">home</Link>
+  </li>
+  <li>
+    <Link to="/products">products</Link>
+  </li>
+  <li>
+    <Link to="/about">about</Link>
+  </li>
+  <li>
+    <Link to="/contact">contact</Link>
+  </li>
+</ul>
          <div className="md_nav_links">
         <Btn 
         text="Order via WhatsApp"
@@ -57,19 +57,19 @@ const [isOpen, setIsOpen] = useState(false);
   <ul className="mobile_navbar_links">
 
     <li>
-      <a href="#home" onClick={() => setIsOpen(false)}>home</a>
+      <Link to="/home" onClick={() => setIsOpen(false)}>home</Link>
     </li>
 
     <li>
-      <a href="#products" onClick={() => setIsOpen(false)}>products</a>
+      <Link to="/products" onClick={() => setIsOpen(false)}>products</Link>
     </li>
 
     <li>
-      <a href="#about" onClick={() => setIsOpen(false)}>about</a>
+      <Link to="/about" onClick={() => setIsOpen(false)}>about</Link>
     </li>
 
     <li>
-      <a href="#contact" onClick={() => setIsOpen(false)}>contact</a>
+      <Link to="/contact" onClick={() => setIsOpen(false)}>contact</Link>
     </li>
 
     <li>
