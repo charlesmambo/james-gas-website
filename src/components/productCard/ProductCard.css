@@ -65,3 +65,10 @@
     border-radius: 12px !important;
     padding: 0.75rem;
 }
+
+@media (max-width: 768px){
+ .product_card {
+    width: 90vw;
+    border: 2px solid rgb(226, 226, 226);
+}   
+}

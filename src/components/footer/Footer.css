@@ -85,6 +85,31 @@ footer{
 .footer_logo{
     margin-bottom: 1rem;
 }
+@media (max-width: 768px){
+ footer{
+    background-color: #1D212B;
+     padding: var(--section-md-padding);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-top: -2.5rem;
+} 
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+} 
+.footer_icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+} 
+.footer_logo_img{
+    margin-left: -1.7rem;
+}
+}
 @media (min-width: 1554px) {
 footer{
     padding: var(--section-desktop-padding);

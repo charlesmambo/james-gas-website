@@ -34,9 +34,9 @@ const Home = () => {
               <Btn 
                 text="Order Now via WhatsApp"
                 icon={LuMessageCircle}
-                className='hero_solid_btn'
+                className='hero_solid_btn mobile_btn'
                 />
-                <Outline/>
+                <Outline className="mobile_btn"/>
             </div>
         </div>
         </div>
